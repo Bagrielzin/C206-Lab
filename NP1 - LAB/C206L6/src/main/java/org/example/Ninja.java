@@ -21,5 +21,4 @@ public class Ninja {
         System.out.println("Ranking do ninja: " + this.ranking);
         System.out.println();
     }
-
 }

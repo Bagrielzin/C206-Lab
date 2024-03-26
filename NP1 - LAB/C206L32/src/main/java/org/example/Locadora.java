@@ -19,7 +19,6 @@ public class Locadora {
         System.out.println("Nome da locadora: " + this.nome);
         System.out.println("CNPJ; " + this.CNPJ);
         System.out.println("Endereço da locadora: " + this.endereco);
-        System.out.println(this.carrosParaAlugar + " carros pra alugar");
         System.out.println();
         for (int i = 0; i < carros.length; i++) {
             if(carros[i]!=null) {

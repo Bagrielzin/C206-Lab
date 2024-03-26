@@ -17,6 +17,7 @@ public class Aldeia {
         for (int i = 0; i < ninjas.length; i++) {
             if(ninjas[i] == null){
                 ninjas[i] = ninja;
+                qtdMoradores++;
                 break;
             }
         }

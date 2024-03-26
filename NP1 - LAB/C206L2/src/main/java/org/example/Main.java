@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
+        Plataforma p1 = new Plataforma("Bagrielzinfix");
         Serie[] series = new Serie[10];
-        Plataforma p1 = new Plataforma("Netflix");
 
         boolean flag = true;
         while(flag){
@@ -20,28 +18,22 @@ public class Main {
             System.out.println("4 - Mostrar porcentagem e média");
             System.out.println("5 - fim");
             int op = sc.nextInt();
+
             switch (op){
                 case 1:
                     sc.nextLine();
-                    System.out.print("Digite o nome da série: ");
+                    System.out.print("Nome da série: ");
                     String nomeSerie = sc.nextLine();
-                    System.out.print("Digite a nota da série: ");
+                    System.out.print("Nota da série: ");
                     double notaSerie = sc.nextDouble();
-                    System.out.print("Digite qtd de temporadas: ");
-                    int qtdTemp = sc.nextInt();
-                    System.out.print("1 - série finalizada, 2 - andamento: ");
-                    int fin = sc.nextInt();
-                    boolean finalizada;
-                    if(fin == 1){
-                        finalizada = true;
-                    }
-                    else{
-                        finalizada = false;
-                    }
+                    System.out.print("Número de temporadas: ");
+                    int numtemp = sc.nextInt();
+                    System.out.print("true - série finalizada, false - série em andamento: ");
+                    boolean finalzd = sc.nextBoolean();
                     sc.nextLine();
-                    System.out.println("Nome do diretor: ");
+                    System.out.print("Nome do diretor: ");
                     String nomedir = sc.nextLine();
-                    Serie s1 = new Serie(nomeSerie,notaSerie,qtdTemp,finalizada,nomedir);
+                    Serie s1 = new Serie(nomeSerie,notaSerie,numtemp,finalzd,nomedir);
                     p1.addSerie(s1);
                     break;
 
@@ -50,8 +42,7 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.print("Serie mais longa finalizada: " + p1.serieMaisLongaFinalizada());
-                    System.out.println();
+                    System.out.println("Série mais lnga: " + p1.serieMaisLongaFinalizada());
                     break;
 
                 case 4:
@@ -63,6 +54,5 @@ public class Main {
                     break;
             }
         }
-
     }
 }

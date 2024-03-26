@@ -7,7 +7,7 @@ public class Main {
 
         Ninja[] ninjas = new Ninja[10];
 
-        Aldeia a1 = new Aldeia("Konoha",2000,"Fogo");
+        Aldeia a1 = new Aldeia("Konoha",0,"Fogo");
 
         Scanner sc = new Scanner(System.in);
 

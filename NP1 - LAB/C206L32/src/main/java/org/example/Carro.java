@@ -23,7 +23,7 @@ public class Carro {
         else{
             System.out.println("Carro nao alugado");
         }
-        System.out.println("Velocidade maxima: " + this.motor.velocidadeMaxima);
+        this.motor.mostraInfo();
         System.out.println();
     }
 
