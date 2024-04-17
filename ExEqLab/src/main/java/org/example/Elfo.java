@@ -10,7 +10,7 @@ public class Elfo extends Habitante implements Cura{
     }
 
     public void viajar(){
-        System.out.println(this.nome + " e  stá viajando");
+        System.out.println(this.nome + " está viajando");
     }
 
 
