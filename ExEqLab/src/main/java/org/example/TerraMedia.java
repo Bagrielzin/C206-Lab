@@ -2,8 +2,10 @@ package org.example;
 
 public class TerraMedia {
 
+    //Array dos herois
     Habitante[] herois = new Habitante[10];
 
+    //Método de adicionar habitantes
     public void addHabitante(Habitante habitante){
         for (int i = 0; i < herois.length; i++) {
             if(herois[i]==null) {
@@ -13,6 +15,7 @@ public class TerraMedia {
         }
     }
 
+    //Método de listar os habitantes
     public void listarHabitantes(){
         System.out.println("Total de habitantes: " + Habitante.contador);
         for (int i = 0; i < herois.length; i++) {

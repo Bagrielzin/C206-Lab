@@ -2,6 +2,7 @@ package org.example;
 
 public abstract class Habitante {
 
+    //Atributos do habitante
     public static int contador = 0;
     protected int id;
     protected String nome;
@@ -9,8 +10,9 @@ public abstract class Habitante {
     protected float energia;
     protected Arma arma;
 
+    //Constructor do habitante
     public Habitante(int id, String nome, int idade, float energia, String nomeArma, boolean magicaArma) {
-        this.id = id;
+        this.id = contador;
         this.nome = nome;
         this.idade = idade;
         this.energia = energia;
@@ -18,6 +20,7 @@ public abstract class Habitante {
         contador++;
     }
 
+    //Método atacar padrão
     public void atacar(){
         if(arma.isMagica()){
             this.energia -= 20;
@@ -34,6 +37,7 @@ public abstract class Habitante {
         }
     }
 
+    //Método mostra info padrão
     public void mostraInfo(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Id: " + this.id);
