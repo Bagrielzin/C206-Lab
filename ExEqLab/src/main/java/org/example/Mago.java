@@ -6,8 +6,8 @@ public class Mago extends Habitante implements Feitico,Cura{
     private String cor;
 
     //Atributos herdados da super classe
-    public Mago(int id, String nome, int idade, float energia, String nomeArma, boolean magicaArma, String cor) {
-        super(id, nome, idade, energia, nomeArma, magicaArma);
+    public Mago(String nome, int idade, float energia, String nomeArma, boolean magicaArma, String cor) {
+        super(nome, idade, energia, nomeArma, magicaArma);
         this.cor = cor;
     }
 
@@ -47,4 +47,5 @@ public class Mago extends Habitante implements Feitico,Cura{
         this.energia += this.energia*0.15;
         System.out.println(this.nome + " foi curado");
     }
+
 }

@@ -3,11 +3,11 @@ package org.example;
 public class Elfo extends Habitante implements Cura{
 
     //Atributo do elfo
-    String tribo;
+    private String tribo;
 
     //Atributos herdados da super classe
-    public Elfo(int id, String nome, int idade, float energia, String nomeArma, boolean magicaArma, String tribo) {
-        super(id, nome, idade, energia, nomeArma, magicaArma);
+    public Elfo(String nome, int idade, float energia, String nomeArma, boolean magicaArma, String tribo) {
+        super(nome, idade, energia, nomeArma, magicaArma);
         this.tribo = tribo;
     }
 

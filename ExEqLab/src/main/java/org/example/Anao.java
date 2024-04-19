@@ -7,8 +7,8 @@ public class Anao extends Habitante implements Mineracao{
     private String reino;
 
     //Atributos herdados da super classe
-    public Anao(int id, String nome, int idade, float energia, String nomeArma, boolean magicaArma, float altura, String reino) {
-        super(id, nome, idade, energia, nomeArma, magicaArma);
+    public Anao(String nome, int idade, float energia, String nomeArma, boolean magicaArma, float altura, String reino) {
+        super(nome, idade, energia, nomeArma, magicaArma);
         this.altura = altura;
         this.reino = reino;
     }

@@ -10,8 +10,7 @@ public abstract class Habitante {
     protected float energia;
     protected Arma arma;
 
-    //Constructor do habitante
-    public Habitante(int id, String nome, int idade, float energia, String nomeArma, boolean magicaArma) {
+    public Habitante(String nome, int idade, float energia, String nomeArma, boolean magicaArma) {
         this.id = contador;
         this.nome = nome;
         this.idade = idade;
