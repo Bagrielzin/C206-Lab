@@ -1,0 +1,16 @@
+++ Produto ++
+Banana
+5.0
+Comida
+++ Produto ++
+Sabão
+10.0
+Higiene
+++ Produto ++
+Quadro
+50.0
+Decoração
+++ Produto ++
+Uva
+2.0
+Comida
