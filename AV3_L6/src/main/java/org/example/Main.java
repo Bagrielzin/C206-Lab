@@ -25,15 +25,26 @@ public class Main {
             switch (op) {
                 case 1:
                     sc.nextLine();
-                    System.out.print("Nome: ");
-                    String nomeProd = sc.nextLine();
-                    System.out.print("Preco: ");
-                    double precoProd = sc.nextDouble();
-                    sc.nextLine();
-                    System.out.print("Tipo: ");
-                    String tipoProd = sc.nextLine();
-                    Produto p1 = new Produto(nomeProd,precoProd,tipoProd);
-                    a.escrever(p1);
+                    try {
+                        System.out.print("Nome: ");
+                        String nomeProd = sc.nextLine();
+                        System.out.print("Preco: ");
+                        double precoProd = sc.nextDouble();
+                        if(precoProd <= 0){
+                            throw new InfoInvalidaException();
+                        }
+                        sc.nextLine();
+                        System.out.print("Tipo: ");
+                        String tipoProd = sc.nextLine();
+                        if(tipoProd.equals("Comida") && tipoProd.equals("Higiene") && tipoProd.equals("Decoração")){
+                            throw new InfoInvalidaException();
+                        }
+                        System.out.println("Produto cadastrado");
+                        Produto p1 = new Produto(nomeProd,precoProd,tipoProd);
+                        a.escrever(p1);
+                    }catch (InfoInvalidaException e) {
+                        break;
+                    }
                     break;
 
                 case 2:

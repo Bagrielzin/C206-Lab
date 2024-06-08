@@ -14,3 +14,11 @@ Decoração
 Uva
 2.0
 Comida
+++ Produto ++
+asd
+20.0
+Higiene
+++ Produto ++
+Chumbinho
+24.0
+Higiene
