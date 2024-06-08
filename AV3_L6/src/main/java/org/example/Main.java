@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Menu");
             System.out.println("1 - Cadastrar");
             System.out.println("2 - Listar");
-            System.out.println("3 - Ordenar por ordem crescente de preço");
+            System.out.println("3 - Ordenar por ordem decrescente de preço");
             System.out.println("4 - Quantidade de cada produto");
             System.out.println("5 - Sair");
             int op = sc.nextInt();
@@ -48,7 +48,7 @@ public class Main {
 
                 case 3:
                     produtos = a.ler();
-                    Collections.sort(produtos);
+                    Collections.sort(produtos,Collections.reverseOrder());
                     for (int i = 0; i < produtos.size(); i++) {
                         System.out.println("Nome: " + produtos.get(i).getNome());
                         System.out.println("Preço: " + produtos.get(i).getPreco());
