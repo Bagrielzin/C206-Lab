@@ -43,7 +43,7 @@ public class Main {
                         Produto p1 = new Produto(nomeProd,precoProd,tipoProd);
                         a.escrever(p1);
                     }catch (InfoInvalidaException e) {
-                        System.out.println(e);
+                        System.out.println(e.getMessage());
                         break;
                     }
                     break;
