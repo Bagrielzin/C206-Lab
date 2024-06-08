@@ -31,18 +31,19 @@ public class Main {
                         System.out.print("Preco: ");
                         double precoProd = sc.nextDouble();
                         if(precoProd <= 0){
-                            throw new InfoInvalidaException();
+                            throw new InfoInvalidaException("Preço inválido");
                         }
                         sc.nextLine();
                         System.out.print("Tipo: ");
                         String tipoProd = sc.nextLine();
-                        if(tipoProd.equals("Comida") && tipoProd.equals("Higiene") && tipoProd.equals("Decoração")){
-                            throw new InfoInvalidaException();
+                        if(!tipoProd.equals("Comida") && !tipoProd.equals("Higiene") && !tipoProd.equals("Decoração")){
+                            throw new InfoInvalidaException("Tipo de produto inválido");
                         }
                         System.out.println("Produto cadastrado");
                         Produto p1 = new Produto(nomeProd,precoProd,tipoProd);
                         a.escrever(p1);
                     }catch (InfoInvalidaException e) {
+                        System.out.println(e);
                         break;
                     }
                     break;

@@ -22,3 +22,7 @@ Higiene
 Chumbinho
 24.0
 Higiene
+++ Produto ++
+Caju
+8.0
+Comida

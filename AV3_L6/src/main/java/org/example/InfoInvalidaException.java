@@ -2,6 +2,7 @@ package org.example;
 
 public class InfoInvalidaException extends RuntimeException{
 
-    public InfoInvalidaException() {
+    public InfoInvalidaException(String s) {
+        super(s);
     }
 }
