@@ -1,0 +1,35 @@
+++ Aluno ++
+Zezin
+300
+Software
+60.0
+++ Aluno ++
+Dudu
+402
+Software
+90.0
+++ Aluno ++
+Jaozin
+5098
+Computação
+20.0
+++ Aluno ++
+Carlin
+2980
+Telecomunicações
+70.0
+++ Aluno ++
+Junin
+1998
+Computação
+95.0
+++ Aluno ++
+Patati
+5
+Software
+10.0
+++ Aluno ++
+Patata
+498
+Telecomunicações
+10.0
